@@ -4,60 +4,87 @@ padding: 0;
 font-family: Arial;
 background: #eef2f7;
 }
+
 header {
 background: #1e73be;
 color: white;
 padding: 20px;
 text-align: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
 nav ul {
 display: flex;
 justify-content: center;
-gap: 20px;
+gap: 25px;
 list-style: none;
 padding: 0;
 }
+
 nav a {
 color: white;
 text-decoration: none;
-padding: 8px 15px;
+padding: 8px 14px;
 border-radius: 8px;
 transition: 0.3s;
 }
+
 nav a:hover {
 background: white;
 color: #1e73be;
 }
+
 .hero {
-background: #1e73be;
+background: linear-gradient(135deg, #1e73be, #144d82);
 color: white;
-padding: 60px;
+padding: 70px 20px;
 text-align: center;
 }
-section {
+
+button {
+padding: 12px 25px;
+border: none;
 background: white;
-margin: 20px;
-padding: 20px;
+color: #1e73be;
+font-size: 16px;
 border-radius: 10px;
+cursor: pointer;
+transition: 0.3s;
 }
-.gallery {
+
+button:hover {
+background: #dfe8f5;
+}
+
+.card {
+background: white;
+margin: 25px;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.img-wide {
+width: 100%;
+border-radius: 12px;
+margin-top: 15px;
+}
+
+.grid {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 gap: 20px;
 }
-.gallery img {
+
+.step img {
 width: 100%;
 border-radius: 12px;
 }
-.contact-form {
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
+
 footer {
-text-align: center;
-padding: 20px;
 background: #1e73be;
+text-align: center;
 color: white;
-margin-top: 30px;
+padding: 20px;
+margin-top: 40px;
 }
